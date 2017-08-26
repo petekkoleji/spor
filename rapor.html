@@ -24,7 +24,7 @@
   <body id="page-top" class="" style="">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav" style="">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">PETEK KOLEJİ</a>
         <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="">
@@ -40,7 +40,7 @@
               <a class="nav-link js-scroll-trigger" href="#about">RAPORLAR</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#contact">GİRİŞ</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">GİRİŞ</a>
             </li>
           </ul>
         </div>
@@ -50,100 +50,125 @@
     <!-- Header -->
     <header class="masthead">
       <div class="container">
-        <img class="img-fluid" src="img/podium.png" alt="">
-        <div class="intro-text">
-          <span class="name" style="
-    font-size: 8vmin;
-">SPOR DEĞERLENDİRMELERİ SİSTEMİ</span>
-          
-          
-        </div>
+        
+        <h4 class="intro-text">
+          Öğrenci Ara          
+        </h4>
+ <div class="input-group">
+    <input type="text" class="form-control" placeholder="Soyisim, İsim">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
       </div>
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-      <div class="container">
-        <h3 class="text-center">DEĞERLENDİRME ALANLARI</h3>
+    <section id="portfolio" style="
+">
+      <div class="container text-center">
+          <h3>Genel Ortalamalar </h3>
         <hr class="star-primary">
         <div class="row">
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-            </a>
-          </div>
+<canvas id="myChart" width="640" height="640" style="display: block; width: 320px; height: 320px;"></canvas>
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>          
+          
+          
+          
+          
+          
         </div>
       </div>
     </section>
 
     <!-- About Section -->
-    <section class="success" id="about">
+    <section class="success" id="about" style="
+    background: #19bebe;
+">
       <div class="container">
-        <h3 class="text-center">ÖZET</h3>
-        <hr class="">
+        
+        
         <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p>Her öğrencimizin yıl başında yapılan performans değerlendirmesinin analizi ve raporları.</p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p>Çocuğunuzun raporlarına göz atmak için tıklayın.</p>
-          </div>
-    <div class="col-lg-8 mx-auto text-center"><button class="btn btn-outline btn-lg">Raporlar</button>  </div>          
+        <canvas id="myChart" width="640" height="640" style="display: block; width: 320px; height: 320px;"></canvas>
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>          
         </div>
       </div>
     </section>
@@ -151,34 +176,19 @@
     <!-- Contact Section -->
     <section id="contact">
       <div class="container text-center">
-        <h3 class="text-center">Giriş Yap</h3>
-(ÖĞRETMENLER İÇİN)        <hr class="star-primary">
+        <h3 class="text-center">Sonuç</h3><hr class="star-primary">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             
             
             <form name="sentMessage" id="giriş" novalidate="">
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>E-Mail Adresi</label>
-                  <input class="form-control" id="name" type="text" placeholder="E-Mail" required="" data-validation-required-message="Please enter your name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
               
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Şifre</label>
-                  <input class="form-control" id="pass" type="tel" placeholder="Şifre" required="" data-validation-required-message="Şifrenizi Giriniz">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
+              
+              
               
               <br>
               <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-success btn-lg" id="login">Giriş</button>
-              </div>
+              
             </form>
           </div>
         </div>
@@ -218,7 +228,7 @@
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
 ">
-    <div>Icons made by <a href="https://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    
 </div>
           </div>
         </div>
@@ -522,4 +532,5 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
 </body></html>
